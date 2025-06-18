@@ -1,0 +1,21 @@
+# Go build artifacts
+*.exe
+*.test
+*.out
+
+# IDE/editor folders
+.vscode/
+.idea/
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+
+# Binaries
+/bin/
+/build/
+/dist/
