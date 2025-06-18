@@ -1,6 +1,6 @@
 package models
 
-import "Time"
+import "time"
 
 type payslip struct {
 	id         uint `gorm:"primaryKey"`
@@ -13,6 +13,6 @@ type payslip struct {
 	status       string `json:"status"`
 	downloadedOn time.Time
 	period       time.Time
-	createdOn    time.Time
-	updatedOn    time.Time
+	CreatedAt    time.Time
+	UpdatedAt    time.Time
 }

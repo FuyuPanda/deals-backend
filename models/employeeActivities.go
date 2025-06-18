@@ -1,13 +1,15 @@
 package models
 
-import "Time"
+import "time"
 
 type employeeActivities struct {
-	id         uint `gorm:"primaryKey"`
-	employeeID int
+	Id         uint `gorm:"primaryKey"`
+	EmployeeID int
 	Points     int64
 
-	ip          string
-	description string
-	device      string
+	Ip          string
+	Description string
+	Device      string
+
+	CreatedAt time.Time
 }

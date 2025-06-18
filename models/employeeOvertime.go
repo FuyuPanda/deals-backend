@@ -1,9 +1,9 @@
 package models
 
-import "Time"
+import "time"
 
 type employeeOvertime struct {
-	id         uint `gorm:"primaryKey"`
+	Id         uint `gorm:"primaryKey"`
 	createdBy  int
 	updatedBy  int
 	employeeID int

@@ -1,6 +1,6 @@
 package models
 
-import "Time"
+import "time"
 
 type payslipDetails struct {
 	id              uint `gorm:"primaryKey"`
@@ -10,6 +10,6 @@ type payslipDetails struct {
 	updatedBy       int
 	Points          int64
 
-	createdOn time.Time
-	updatedOn time.Time
+	CreatedAt time.Time
+	UpdatedAt time.Time
 }

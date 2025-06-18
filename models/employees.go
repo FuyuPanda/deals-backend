@@ -1,18 +1,17 @@
 package models
 
-import "Time"
+import "time"
 
 type Employees struct {
-	id        uint `json:"id" gorm:"primaryKey"`
-	createdBy int
-	updatedBy int
-	Points    int64
+	Id        uint `gorm:"primaryKey"`
+	CreatedBy int
+	UpdatedBy int
 
-	username string `json:"username"`
-	password string `json:"password"`
-	fullName string `json:"full_name"`
-	salary   string `json:"salary"`
+	Username string `json:"username"`
+	Password string `json:"password"`
+	FullName string `json:"full_name"`
+	Salary   string `json:"salary"`
 
-	createdOn time.Time
-	updatedOn time.Time
+	CreatedAt time.Time
+	UpdatedAt time.Time
 }

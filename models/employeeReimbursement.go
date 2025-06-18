@@ -1,16 +1,16 @@
 package models
 
-import "Time"
+import "time"
 
 type employeeReimbursement struct {
-	id         uint `gorm:"primaryKey"`
+	Id         uint `gorm:"primaryKey"`
 	employeeID int
 	createdBy  int
 	updatedBy  int
 	Points     int64
 
-	amount      int    `json:"amount"`
-	description string `json:"description"`
-	createdOn   time.Time
-	updatedOn   time.Time
+	Amount      int    `json:"amount"`
+	Description string `json:"description"`
+	CreatedAt   time.Time
+	UpdatedAt   time.Time
 }
