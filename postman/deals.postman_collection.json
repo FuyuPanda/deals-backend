@@ -1,0 +1,918 @@
+{
+	"info": {
+		"_postman_id": "426827f0-97c2-4759-9cb3-8e91014e477c",
+		"name": "deals",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "overtime",
+			"item": [
+				{
+					"name": "Create overtime",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"start_time\":\"2025-06-18T19:00:00Z\",\r\n    \"end_time\":\"2025-06-18T21:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/overtime",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"overtime"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Create overtime",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"start_time\":\"2025-06-18T19:00:00Z\",\r\n    \"end_time\":\"2025-06-18T21:00:00Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/overtime",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"overtime"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 Jun 2025 13:35:47 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "143"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\"Id\":1,\"CreatedBy\":203,\"UpdatedBy\":203,\"EmployeeID\":203,\"start_time\":\"2025-06-18T19:00:00Z\",\"end_time\":\"2025-06-18T21:00:00Z\",\"TotalHours\":3}\n"
+						}
+					]
+				},
+				{
+					"name": "Get Overtime",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/overtime",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"overtime"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Overtime",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/overtime",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"overtime"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 Jun 2025 13:36:24 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "155"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "[{\"Id\":1,\"CreatedBy\":203,\"UpdatedBy\":203,\"EmployeeID\":203,\"start_time\":\"2025-06-19T02:00:00+07:00\",\"end_time\":\"2025-06-19T04:00:00+07:00\",\"TotalHours\":3}]\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "reimbursement",
+			"item": [
+				{
+					"name": "Submit reimbursement",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"amount\":50000,\r\n    \"description\":\"Grab lebak bulus\",\r\n    \"time_of_reimbursement\":\"2025-06-18T21:30:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/reimbursement",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reimbursement"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Submit reimbursement",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"amount\":50000,\r\n    \"description\":\"Grab lebak bulus\",\r\n    \"time_of_reimbursement\":\"2025-06-18T21:30:00Z\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/reimbursement",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"reimbursement"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 Jun 2025 13:39:49 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "249"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\"Id\":1,\"EmployeeID\":203,\"CreatedBy\":203,\"UpdatedBy\":203,\"amount\":50000,\"description\":\"Grab lebak bulus\",\"time_of_reimbursement\":\"2025-06-18T21:30:00Z\",\"CreatedAt\":\"2025-06-19T20:39:49.6087165+07:00\",\"UpdatedAt\":\"2025-06-19T20:39:49.6087165+07:00\"}\n"
+						}
+					]
+				},
+				{
+					"name": "Get Reimbursement",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/reimbursement",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reimbursement"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Reimbursement",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/reimbursement",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"reimbursement"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 Jun 2025 13:40:14 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "254"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "[{\"Id\":1,\"EmployeeID\":203,\"CreatedBy\":203,\"UpdatedBy\":203,\"amount\":50000,\"description\":\"Grab lebak bulus\",\"time_of_reimbursement\":\"2025-06-19T04:30:00+07:00\",\"CreatedAt\":\"2025-06-19T20:39:49.608716+07:00\",\"UpdatedAt\":\"2025-06-19T20:39:49.608716+07:00\"}]\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "attendance",
+			"item": [
+				{
+					"name": "Clock In",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/attendance/clockin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"attendance",
+								"clockin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clock out",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/attendance/clockout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"attendance",
+								"clockout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Attendance History",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/attendance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"attendance"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Attendance History",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/attendance",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"attendance"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 Jun 2025 08:31:55 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "268"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"Id\": 1,\n        \"EmployeeID\": 203,\n        \"CreatedBy\": 203,\n        \"UpdatedBy\": 203,\n        \"CheckInTime\": \"2025-06-19T14:49:03.824298+07:00\",\n        \"CheckOutTime\": \"2025-06-19T15:26:06.758398+07:00\",\n        \"TotalHours\": 1,\n        \"CreatedAt\": \"2025-06-19T14:49:03.824983+07:00\",\n        \"UpdatedAt\": \"2025-06-19T15:26:06.758398+07:00\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "payroll",
+			"item": [
+				{
+					"name": "Process Payroll",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"process payments to employees\",\r\n    \"period\":\"2025-06-30T00:00:00Z\",\r\n    \"employee_id\":203\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/payroll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"payroll"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Process Payroll",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"status\":\"process payments to employees\",\r\n    \"period\":\"2025-06-30T00:00:00Z\",\r\n    \"employee_id\":203\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8080/payroll",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"payroll"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 Jun 2025 14:29:53 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "303"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\"Id\":1,\"employee_id\":203,\"CreatedBy\":2,\"UpdatedBy\":2,\"IsDownloaded\":false,\"status\":\"process payments to employees\",\"TotalAmount\":54195,\"DownloadedOn\":\"0001-01-01T00:00:00Z\",\"period\":\"2025-06-30T00:00:00Z\",\"CreatedAt\":\"2025-06-19T21:29:53.4390115+07:00\",\"UpdatedAt\":\"2025-06-19T21:29:53.4489087+07:00\"}\n"
+						}
+					]
+				},
+				{
+					"name": "Get Payslip",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/payroll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"payroll"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Payslip",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/payroll",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"payroll"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 Jun 2025 16:31:34 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "803"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "[{\"Id\":1,\"employee_id\":203,\"CreatedBy\":2,\"UpdatedBy\":2,\"IsDownloaded\":false,\"status\":\"process payments to employees\",\"TotalAmount\":54195,\"DownloadedOn\":\"0001-01-01T07:00:00+07:00\",\"period\":\"2025-06-30T07:00:00+07:00\",\"CreatedAt\":\"2025-06-19T21:29:53.439011+07:00\",\"UpdatedAt\":\"2025-06-19T21:29:53.448908+07:00\",\"overtimes\":[{\"employee_name\":\"Emily Wilson\",\"start_time\":\"2025-06-19T02:00:00+07:00\",\"end_time\":\"2025-06-19T04:00:00+07:00\",\"total_hours\":3,\"amount\":2517}],\"reimbursements\":[{\"employee_name\":\"Emily Wilson\",\"amount\":50000,\"description\":\"Grab lebak bulus\",\"time_of_reimbursement\":\"2025-06-19T04:30:00+07:00\"}],\"attendances\":[{\"employee_name\":\"Emily Wilson\",\"check_in_time\":\"2025-06-19T14:49:03.824298+07:00\",\"check_out_time\":\"2025-06-19T15:26:06.758398+07:00\",\"total_hours\":1,\"amount\":839}]}]\n"
+						}
+					]
+				},
+				{
+					"name": "Get Take home pay for each employee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/payroll/employee/summary",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"payroll",
+								"employee",
+								"summary"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get Take home pay for each employee",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/payroll/employee/summary",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"payroll",
+										"employee",
+										"summary"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 Jun 2025 17:02:21 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "50"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "[{\"employee_name\":\"Emily Wilson\",\"amount\":54195}]\n"
+						}
+					]
+				},
+				{
+					"name": "Get total payroll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/payroll/total",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"payroll",
+								"total"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get total payroll",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8080/payroll/total",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"payroll",
+										"total"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 Jun 2025 17:09:49 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "17"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								}
+							],
+							"cookie": [],
+							"body": "{\"amount\":54195}\n"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Create employee",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"username\": \"lgarcia1\",\r\n    \"password\": \"bif3JScV\",\r\n    \"full_name\": \"Leo Garcia\",\r\n    \"salary\": \"1558\"\r\n  },\r\n  {\r\n    \"username\": \"llee2\",\r\n    \"password\": \"lEEL0$Nj\",\r\n    \"full_name\": \"Leo Lee\",\r\n    \"salary\": \"1644\"\r\n  },\r\n  {\r\n    \"username\": \"swang3\",\r\n    \"password\": \"#8p3CTgQ\",\r\n    \"full_name\": \"Sara Wang\",\r\n    \"salary\": \"1495\"\r\n  },\r\n  {\r\n    \"username\": \"nbrown4\",\r\n    \"password\": \"CLpznVRg\",\r\n    \"full_name\": \"Nina Brown\",\r\n    \"salary\": \"1082\"\r\n  },\r\n  {\r\n    \"username\": \"jcheng5\",\r\n    \"password\": \"RPK1f#Gu\",\r\n    \"full_name\": \"John Cheng\",\r\n    \"salary\": \"1559\"\r\n  },\r\n  {\r\n    \"username\": \"msilva6\",\r\n    \"password\": \"4Rklcdcw\",\r\n    \"full_name\": \"Mina Silva\",\r\n    \"salary\": \"1764\"\r\n  },\r\n  {\r\n    \"username\": \"stan7\",\r\n    \"password\": \"kkiuWcI#\",\r\n    \"full_name\": \"Sara Tan\",\r\n    \"salary\": \"1290\"\r\n  },\r\n  {\r\n    \"username\": \"lnguyen8\",\r\n    \"password\": \"RuzQb#Ps\",\r\n    \"full_name\": \"Ling Nguyen\",\r\n    \"salary\": \"1138\"\r\n  },\r\n  {\r\n    \"username\": \"mtan9\",\r\n    \"password\": \"KqVoOrn9\",\r\n    \"full_name\": \"Mary Tan\",\r\n    \"salary\": \"1322\"\r\n  },\r\n  {\r\n    \"username\": \"jdoe10\",\r\n    \"password\": \"Jz0g2GRj\",\r\n    \"full_name\": \"James Doe\",\r\n    \"salary\": \"1273\"\r\n  },\r\n  {\r\n    \"username\": \"jdoe11\",\r\n    \"password\": \"YRyJKntP\",\r\n    \"full_name\": \"James Doe\",\r\n    \"salary\": \"1025\"\r\n  },\r\n  {\r\n    \"username\": \"jsmith12\",\r\n    \"password\": \"Ia27W6I3\",\r\n    \"full_name\": \"James Smith\",\r\n    \"salary\": \"1110\"\r\n  },\r\n  {\r\n    \"username\": \"rsilva13\",\r\n    \"password\": \"9PYKoJb7\",\r\n    \"full_name\": \"Raj Silva\",\r\n    \"salary\": \"1433\"\r\n  },\r\n  {\r\n    \"username\": \"mdoe14\",\r\n    \"password\": \"VYm59pil\",\r\n    \"full_name\": \"Maria Doe\",\r\n    \"salary\": \"1961\"\r\n  },\r\n  {\r\n    \"username\": \"msmith15\",\r\n    \"password\": \"canLL$L4\",\r\n    \"full_name\": \"Mina Smith\",\r\n    \"salary\": \"1331\"\r\n  },\r\n  {\r\n    \"username\": \"ayusuf16\",\r\n    \"password\": \"F7!c3J3P\",\r\n    \"full_name\": \"Ali Yusuf\",\r\n    \"salary\": \"1590\"\r\n  },\r\n  {\r\n    \"username\": \"anguyen17\",\r\n    \"password\": \"IYhfAxZV\",\r\n    \"full_name\": \"Ali Nguyen\",\r\n    \"salary\": \"1004\"\r\n  },\r\n  {\r\n    \"username\": \"dgarcia18\",\r\n    \"password\": \"w@U!6lN1\",\r\n    \"full_name\": \"David Garcia\",\r\n    \"salary\": \"1618\"\r\n  },\r\n  {\r\n    \"username\": \"apatel19\",\r\n    \"password\": \"krnOCoLq\",\r\n    \"full_name\": \"Ali Patel\",\r\n    \"salary\": \"1922\"\r\n  },\r\n  {\r\n    \"username\": \"dnguyen20\",\r\n    \"password\": \"JA7$2ZGx\",\r\n    \"full_name\": \"David Nguyen\",\r\n    \"salary\": \"1105\"\r\n  },\r\n  {\r\n    \"username\": \"abrown21\",\r\n    \"password\": \"9T5e1$ZM\",\r\n    \"full_name\": \"Ali Brown\",\r\n    \"salary\": \"1252\"\r\n  },\r\n  {\r\n    \"username\": \"nyusuf22\",\r\n    \"password\": \"f0AHtZU9\",\r\n    \"full_name\": \"Nina Yusuf\",\r\n    \"salary\": \"1307\"\r\n  },\r\n  {\r\n    \"username\": \"lsmith23\",\r\n    \"password\": \"iYPc@hTg\",\r\n    \"full_name\": \"Ling Smith\",\r\n    \"salary\": \"1796\"\r\n  },\r\n  {\r\n    \"username\": \"jkumar24\",\r\n    \"password\": \"oxyvKyQU\",\r\n    \"full_name\": \"John Kumar\",\r\n    \"salary\": \"1680\"\r\n  },\r\n  {\r\n    \"username\": \"mtan25\",\r\n    \"password\": \"bB4KhXHG\",\r\n    \"full_name\": \"Mina Tan\",\r\n    \"salary\": \"1659\"\r\n  },\r\n  {\r\n    \"username\": \"mgarcia26\",\r\n    \"password\": \"mF5Uvrnl\",\r\n    \"full_name\": \"Mina Garcia\",\r\n    \"salary\": \"1236\"\r\n  },\r\n  {\r\n    \"username\": \"jsmith27\",\r\n    \"password\": \"4@mTytUf\",\r\n    \"full_name\": \"James Smith\",\r\n    \"salary\": \"1106\"\r\n  },\r\n  {\r\n    \"username\": \"lyusuf28\",\r\n    \"password\": \"9nDo2Gd5\",\r\n    \"full_name\": \"Ling Yusuf\",\r\n    \"salary\": \"1990\"\r\n  },\r\n  {\r\n    \"username\": \"somar29\",\r\n    \"password\": \"PxX$i2Mp\",\r\n    \"full_name\": \"Sara Omar\",\r\n    \"salary\": \"1831\"\r\n  },\r\n  {\r\n    \"username\": \"romar30\",\r\n    \"password\": \"fwbUbK6C\",\r\n    \"full_name\": \"Raj Omar\",\r\n    \"salary\": \"1053\"\r\n  },\r\n  {\r\n    \"username\": \"rgarcia31\",\r\n    \"password\": \"kYX8@$Mr\",\r\n    \"full_name\": \"Raj Garcia\",\r\n    \"salary\": \"1398\"\r\n  },\r\n  {\r\n    \"username\": \"dnguyen32\",\r\n    \"password\": \"o1yG0kuC\",\r\n    \"full_name\": \"David Nguyen\",\r\n    \"salary\": \"1173\"\r\n  },\r\n  {\r\n    \"username\": \"fgarcia33\",\r\n    \"password\": \"bfMs2@KW\",\r\n    \"full_name\": \"Fatima Garcia\",\r\n    \"salary\": \"1994\"\r\n  },\r\n  {\r\n    \"username\": \"jsilva34\",\r\n    \"password\": \"bDDTOrJI\",\r\n    \"full_name\": \"James Silva\",\r\n    \"salary\": \"1524\"\r\n  },\r\n  {\r\n    \"username\": \"lomar35\",\r\n    \"password\": \"aFjU!Cn#\",\r\n    \"full_name\": \"Leo Omar\",\r\n    \"salary\": \"1492\"\r\n  },\r\n  {\r\n    \"username\": \"fnguyen36\",\r\n    \"password\": \"p#7sbKlv\",\r\n    \"full_name\": \"Fatima Nguyen\",\r\n    \"salary\": \"1450\"\r\n  },\r\n  {\r\n    \"username\": \"lsilva37\",\r\n    \"password\": \"y5MTjgJs\",\r\n    \"full_name\": \"Leo Silva\",\r\n    \"salary\": \"1947\"\r\n  },\r\n  {\r\n    \"username\": \"dwang38\",\r\n    \"password\": \"X5Dv01zd\",\r\n    \"full_name\": \"David Wang\",\r\n    \"salary\": \"1143\"\r\n  },\r\n  {\r\n    \"username\": \"ssilva39\",\r\n    \"password\": \"vW4yKzpc\",\r\n    \"full_name\": \"Sara Silva\",\r\n    \"salary\": \"1831\"\r\n  },\r\n  {\r\n    \"username\": \"rkumar40\",\r\n    \"password\": \"Zkqy4UUZ\",\r\n    \"full_name\": \"Raj Kumar\",\r\n    \"salary\": \"1896\"\r\n  },\r\n  {\r\n    \"username\": \"ldoe41\",\r\n    \"password\": \"KL3!MxhE\",\r\n    \"full_name\": \"Leo Doe\",\r\n    \"salary\": \"1000\"\r\n  },\r\n  {\r\n    \"username\": \"lyusuf42\",\r\n    \"password\": \"fJLmpqRY\",\r\n    \"full_name\": \"Leo Yusuf\",\r\n    \"salary\": \"1792\"\r\n  },\r\n  {\r\n    \"username\": \"msilva43\",\r\n    \"password\": \"GRSg$dq4\",\r\n    \"full_name\": \"Maria Silva\",\r\n    \"salary\": \"1201\"\r\n  },\r\n  {\r\n    \"username\": \"mkumar44\",\r\n    \"password\": \"LTWOoCDX\",\r\n    \"full_name\": \"Mary Kumar\",\r\n    \"salary\": \"1245\"\r\n  },\r\n  {\r\n    \"username\": \"jtan45\",\r\n    \"password\": \"UtGjohX5\",\r\n    \"full_name\": \"James Tan\",\r\n    \"salary\": \"1832\"\r\n  },\r\n  {\r\n    \"username\": \"lsmith46\",\r\n    \"password\": \"hWA805Oh\",\r\n    \"full_name\": \"Leo Smith\",\r\n    \"salary\": \"1611\"\r\n  },\r\n  {\r\n    \"username\": \"mgarcia47\",\r\n    \"password\": \"LFZjK0ER\",\r\n    \"full_name\": \"Mina Garcia\",\r\n    \"salary\": \"1871\"\r\n  },\r\n  {\r\n    \"username\": \"mkumar48\",\r\n    \"password\": \"uD2A8GXu\",\r\n    \"full_name\": \"Mary Kumar\",\r\n    \"salary\": \"1040\"\r\n  },\r\n  {\r\n    \"username\": \"abrown49\",\r\n    \"password\": \"7M$pA4QR\",\r\n    \"full_name\": \"Ajay Brown\",\r\n    \"salary\": \"1380\"\r\n  },\r\n  {\r\n    \"username\": \"mdoe50\",\r\n    \"password\": \"rqxn37kM\",\r\n    \"full_name\": \"Maria Doe\",\r\n    \"salary\": \"1813\"\r\n  },\r\n  {\r\n    \"username\": \"akumar51\",\r\n    \"password\": \"T$sOD3@q\",\r\n    \"full_name\": \"Ali Kumar\",\r\n    \"salary\": \"1465\"\r\n  },\r\n  {\r\n    \"username\": \"jyusuf52\",\r\n    \"password\": \"EbfdtUqY\",\r\n    \"full_name\": \"James Yusuf\",\r\n    \"salary\": \"1873\"\r\n  },\r\n  {\r\n    \"username\": \"fpatel53\",\r\n    \"password\": \"aqP59zBf\",\r\n    \"full_name\": \"Fatima Patel\",\r\n    \"salary\": \"1706\"\r\n  },\r\n  {\r\n    \"username\": \"fdoe54\",\r\n    \"password\": \"5$DIJZ0j\",\r\n    \"full_name\": \"Fatima Doe\",\r\n    \"salary\": \"1767\"\r\n  },\r\n  {\r\n    \"username\": \"mdoe55\",\r\n    \"password\": \"jeUFqlup\",\r\n    \"full_name\": \"Mary Doe\",\r\n    \"salary\": \"1644\"\r\n  },\r\n  {\r\n    \"username\": \"mbrown56\",\r\n    \"password\": \"yHlQ3PKm\",\r\n    \"full_name\": \"Mary Brown\",\r\n    \"salary\": \"1860\"\r\n  },\r\n  {\r\n    \"username\": \"mdoe57\",\r\n    \"password\": \"hXbq42ad\",\r\n    \"full_name\": \"Mary Doe\",\r\n    \"salary\": \"1942\"\r\n  },\r\n  {\r\n    \"username\": \"rsilva58\",\r\n    \"password\": \"9GgOWA0M\",\r\n    \"full_name\": \"Raj Silva\",\r\n    \"salary\": \"1634\"\r\n  },\r\n  {\r\n    \"username\": \"momar59\",\r\n    \"password\": \"t3RkWc84\",\r\n    \"full_name\": \"Mina Omar\",\r\n    \"salary\": \"1551\"\r\n  },\r\n  {\r\n    \"username\": \"asmith60\",\r\n    \"password\": \"LCgEER#y\",\r\n    \"full_name\": \"Ali Smith\",\r\n    \"salary\": \"1989\"\r\n  },\r\n  {\r\n    \"username\": \"dsilva61\",\r\n    \"password\": \"qjuIsqQL\",\r\n    \"full_name\": \"David Silva\",\r\n    \"salary\": \"1450\"\r\n  },\r\n  {\r\n    \"username\": \"acheng62\",\r\n    \"password\": \"@DSKWMXE\",\r\n    \"full_name\": \"Ali Cheng\",\r\n    \"salary\": \"1734\"\r\n  },\r\n  {\r\n    \"username\": \"fsmith63\",\r\n    \"password\": \"1bIu6lMd\",\r\n    \"full_name\": \"Fatima Smith\",\r\n    \"salary\": \"1939\"\r\n  },\r\n  {\r\n    \"username\": \"alee64\",\r\n    \"password\": \"rGxX#ld2\",\r\n    \"full_name\": \"Ali Lee\",\r\n    \"salary\": \"1283\"\r\n  },\r\n  {\r\n    \"username\": \"apatel65\",\r\n    \"password\": \"jSAyZ5y1\",\r\n    \"full_name\": \"Ali Patel\",\r\n    \"salary\": \"1127\"\r\n  },\r\n  {\r\n    \"username\": \"nomar66\",\r\n    \"password\": \"HIZlgbD4\",\r\n    \"full_name\": \"Nina Omar\",\r\n    \"salary\": \"1291\"\r\n  },\r\n  {\r\n    \"username\": \"jpatel67\",\r\n    \"password\": \"Ee$4Arp8\",\r\n    \"full_name\": \"James Patel\",\r\n    \"salary\": \"1394\"\r\n  },\r\n  {\r\n    \"username\": \"mwang68\",\r\n    \"password\": \"WkC4Dhpx\",\r\n    \"full_name\": \"Mary Wang\",\r\n    \"salary\": \"1620\"\r\n  },\r\n  {\r\n    \"username\": \"lwang69\",\r\n    \"password\": \"35JUahYV\",\r\n    \"full_name\": \"Ling Wang\",\r\n    \"salary\": \"1700\"\r\n  },\r\n  {\r\n    \"username\": \"aomar70\",\r\n    \"password\": \"piGpU!W7\",\r\n    \"full_name\": \"Ali Omar\",\r\n    \"salary\": \"1097\"\r\n  },\r\n  {\r\n    \"username\": \"skumar71\",\r\n    \"password\": \"3LWYRNEv\",\r\n    \"full_name\": \"Sara Kumar\",\r\n    \"salary\": \"1417\"\r\n  },\r\n  {\r\n    \"username\": \"mlee72\",\r\n    \"password\": \"rWl5x745\",\r\n    \"full_name\": \"Maria Lee\",\r\n    \"salary\": \"1665\"\r\n  },\r\n  {\r\n    \"username\": \"jdoe73\",\r\n    \"password\": \"MhInn8Ul\",\r\n    \"full_name\": \"James Doe\",\r\n    \"salary\": \"1059\"\r\n  },\r\n  {\r\n    \"username\": \"jkumar74\",\r\n    \"password\": \"ijMlVtrF\",\r\n    \"full_name\": \"John Kumar\",\r\n    \"salary\": \"1200\"\r\n  },\r\n  {\r\n    \"username\": \"mcheng75\",\r\n    \"password\": \"939xfjlo\",\r\n    \"full_name\": \"Mina Cheng\",\r\n    \"salary\": \"1284\"\r\n  },\r\n  {\r\n    \"username\": \"nnguyen76\",\r\n    \"password\": \"m5cZHxUU\",\r\n    \"full_name\": \"Nina Nguyen\",\r\n    \"salary\": \"1952\"\r\n  },\r\n  {\r\n    \"username\": \"jbrown77\",\r\n    \"password\": \"zP7lra#L\",\r\n    \"full_name\": \"James Brown\",\r\n    \"salary\": \"1188\"\r\n  },\r\n  {\r\n    \"username\": \"mgarcia78\",\r\n    \"password\": \"@WAYrse!\",\r\n    \"full_name\": \"Mina Garcia\",\r\n    \"salary\": \"1333\"\r\n  },\r\n  {\r\n    \"username\": \"mtan79\",\r\n    \"password\": \"!RpTBUmz\",\r\n    \"full_name\": \"Mary Tan\",\r\n    \"salary\": \"1464\"\r\n  },\r\n  {\r\n    \"username\": \"domar80\",\r\n    \"password\": \"rPGONOPB\",\r\n    \"full_name\": \"David Omar\",\r\n    \"salary\": \"1062\"\r\n  },\r\n  {\r\n    \"username\": \"aomar81\",\r\n    \"password\": \"wBClBzRh\",\r\n    \"full_name\": \"Ali Omar\",\r\n    \"salary\": \"1023\"\r\n  },\r\n  {\r\n    \"username\": \"momar82\",\r\n    \"password\": \"!hs888xJ\",\r\n    \"full_name\": \"Mina Omar\",\r\n    \"salary\": \"1900\"\r\n  },\r\n  {\r\n    \"username\": \"romar83\",\r\n    \"password\": \"bRprx$$Y\",\r\n    \"full_name\": \"Raj Omar\",\r\n    \"salary\": \"1583\"\r\n  },\r\n  {\r\n    \"username\": \"fnguyen84\",\r\n    \"password\": \"gpB!oLKS\",\r\n    \"full_name\": \"Fatima Nguyen\",\r\n    \"salary\": \"1180\"\r\n  },\r\n  {\r\n    \"username\": \"myusuf85\",\r\n    \"password\": \"mkiv!wz7\",\r\n    \"full_name\": \"Maria Yusuf\",\r\n    \"salary\": \"1405\"\r\n  },\r\n  {\r\n    \"username\": \"rlee86\",\r\n    \"password\": \"mzqxVm0l\",\r\n    \"full_name\": \"Raj Lee\",\r\n    \"salary\": \"1697\"\r\n  },\r\n  {\r\n    \"username\": \"jwang87\",\r\n    \"password\": \"LOvBwb!Y\",\r\n    \"full_name\": \"James Wang\",\r\n    \"salary\": \"1154\"\r\n  },\r\n  {\r\n    \"username\": \"fwang88\",\r\n    \"password\": \"csw@JNER\",\r\n    \"full_name\": \"Fatima Wang\",\r\n    \"salary\": \"1738\"\r\n  },\r\n  {\r\n    \"username\": \"dcheng89\",\r\n    \"password\": \"q1gaNs3b\",\r\n    \"full_name\": \"David Cheng\",\r\n    \"salary\": \"1330\"\r\n  },\r\n  {\r\n    \"username\": \"rlee90\",\r\n    \"password\": \"SbbpnfYd\",\r\n    \"full_name\": \"Raj Lee\",\r\n    \"salary\": \"1492\"\r\n  },\r\n  {\r\n    \"username\": \"lsilva91\",\r\n    \"password\": \"cKvIxQaJ\",\r\n    \"full_name\": \"Leo Silva\",\r\n    \"salary\": \"1815\"\r\n  },\r\n  {\r\n    \"username\": \"lcheng92\",\r\n    \"password\": \"gdjs14zY\",\r\n    \"full_name\": \"Ling Cheng\",\r\n    \"salary\": \"1341\"\r\n  },\r\n  {\r\n    \"username\": \"ssilva93\",\r\n    \"password\": \"q#jbNt8e\",\r\n    \"full_name\": \"Sara Silva\",\r\n    \"salary\": \"1972\"\r\n  },\r\n  {\r\n    \"username\": \"momar94\",\r\n    \"password\": \"!#M9RxMi\",\r\n    \"full_name\": \"Maria Omar\",\r\n    \"salary\": \"1817\"\r\n  },\r\n  {\r\n    \"username\": \"mkumar95\",\r\n    \"password\": \"SYFFj!uj\",\r\n    \"full_name\": \"Mary Kumar\",\r\n    \"salary\": \"1379\"\r\n  },\r\n  {\r\n    \"username\": \"msmith96\",\r\n    \"password\": \"61JDFt@e\",\r\n    \"full_name\": \"Maria Smith\",\r\n    \"salary\": \"1704\"\r\n  },\r\n  {\r\n    \"username\": \"awang97\",\r\n    \"password\": \"BE1Y5Z77\",\r\n    \"full_name\": \"Ajay Wang\",\r\n    \"salary\": \"1201\"\r\n  },\r\n  {\r\n    \"username\": \"dcheng98\",\r\n    \"password\": \"Q8D0fYo!\",\r\n    \"full_name\": \"David Cheng\",\r\n    \"salary\": \"1955\"\r\n  },\r\n  {\r\n    \"username\": \"lsmith99\",\r\n    \"password\": \"ZLXTsvjm\",\r\n    \"full_name\": \"Leo Smith\",\r\n    \"salary\": \"1187\"\r\n  },\r\n  {\r\n    \"username\": \"ldoe100\",\r\n    \"password\": \"XmxE5IpV\",\r\n    \"full_name\": \"Ling Doe\",\r\n    \"salary\": \"1494\"\r\n  }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create employee",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n  {\r\n    \"username\": \"ewilson1\",\r\n    \"password\": \"G8ab3mxn\",\r\n    \"full_name\": \"Emily Wilson\",\r\n    \"salary\": 6717\r\n  },\r\n  {\r\n    \"username\": \"lwilliams2\",\r\n    \"password\": \"NRFhmskz\",\r\n    \"full_name\": \"Linda Williams\",\r\n    \"salary\": 1334\r\n  },\r\n  {\r\n    \"username\": \"canderson3\",\r\n    \"password\": \"CwAsmmyY\",\r\n    \"full_name\": \"Charles Anderson\",\r\n    \"salary\": 6783\r\n  },\r\n  {\r\n    \"username\": \"rgarcia4\",\r\n    \"password\": \"u4xGlEig\",\r\n    \"full_name\": \"Richard Garcia\",\r\n    \"salary\": 1329\r\n  },\r\n  {\r\n    \"username\": \"sanderson5\",\r\n    \"password\": \"WvYZ3Y4W\",\r\n    \"full_name\": \"Susan Anderson\",\r\n    \"salary\": 5587\r\n  },\r\n  {\r\n    \"username\": \"ljones6\",\r\n    \"password\": \"TgGYeUQQ\",\r\n    \"full_name\": \"Linda Jones\",\r\n    \"salary\": 8481\r\n  },\r\n  {\r\n    \"username\": \"ebrown7\",\r\n    \"password\": \"2Vf7RfIL\",\r\n    \"full_name\": \"Emily Brown\",\r\n    \"salary\": 6140\r\n  },\r\n  {\r\n    \"username\": \"dwilliams8\",\r\n    \"password\": \"CaAtDVoS\",\r\n    \"full_name\": \"David Williams\",\r\n    \"salary\": 1314\r\n  },\r\n  {\r\n    \"username\": \"emartin9\",\r\n    \"password\": \"67hXKfSy\",\r\n    \"full_name\": \"Emily Martin\",\r\n    \"salary\": 8060\r\n  },\r\n  {\r\n    \"username\": \"jwilson10\",\r\n    \"password\": \"6TW4GKhc\",\r\n    \"full_name\": \"Jessica Wilson\",\r\n    \"salary\": 9528\r\n  },\r\n  {\r\n    \"username\": \"rdavis11\",\r\n    \"password\": \"epMzlRNi\",\r\n    \"full_name\": \"Richard Davis\",\r\n    \"salary\": 3124\r\n  },\r\n  {\r\n    \"username\": \"edavis12\",\r\n    \"password\": \"TGTOQMT3\",\r\n    \"full_name\": \"Emily Davis\",\r\n    \"salary\": 6623\r\n  },\r\n  {\r\n    \"username\": \"cwilliams13\",\r\n    \"password\": \"MljfzKwP\",\r\n    \"full_name\": \"Charles Williams\",\r\n    \"salary\": 1127\r\n  },\r\n  {\r\n    \"username\": \"mrodriguez14\",\r\n    \"password\": \"1waKHsgt\",\r\n    \"full_name\": \"Michael Rodriguez\",\r\n    \"salary\": 3976\r\n  },\r\n  {\r\n    \"username\": \"cmoore15\",\r\n    \"password\": \"aFNomqJp\",\r\n    \"full_name\": \"Christopher Moore\",\r\n    \"salary\": 1146\r\n  },\r\n  {\r\n    \"username\": \"tgarcia16\",\r\n    \"password\": \"llGyoalB\",\r\n    \"full_name\": \"Thomas Garcia\",\r\n    \"salary\": 6504\r\n  },\r\n  {\r\n    \"username\": \"jmartinez17\",\r\n    \"password\": \"ZDXhlub8\",\r\n    \"full_name\": \"John Martinez\",\r\n    \"salary\": 3570\r\n  },\r\n  {\r\n    \"username\": \"lhernandez18\",\r\n    \"password\": \"CeX9NZQA\",\r\n    \"full_name\": \"Linda Hernandez\",\r\n    \"salary\": 5430\r\n  },\r\n  {\r\n    \"username\": \"kbrown19\",\r\n    \"password\": \"lfhfzRVi\",\r\n    \"full_name\": \"Karen Brown\",\r\n    \"salary\": 4139\r\n  },\r\n  {\r\n    \"username\": \"sgarcia20\",\r\n    \"password\": \"LC297sxU\",\r\n    \"full_name\": \"Sarah Garcia\",\r\n    \"salary\": 7678\r\n  },\r\n  {\r\n    \"username\": \"lgarcia21\",\r\n    \"password\": \"b6Un4R7u\",\r\n    \"full_name\": \"Linda Garcia\",\r\n    \"salary\": 9015\r\n  },\r\n  {\r\n    \"username\": \"jjones22\",\r\n    \"password\": \"9EQ0mYgz\",\r\n    \"full_name\": \"Jessica Jones\",\r\n    \"salary\": 8029\r\n  },\r\n  {\r\n    \"username\": \"ldavis23\",\r\n    \"password\": \"y8hjgbBo\",\r\n    \"full_name\": \"Linda Davis\",\r\n    \"salary\": 8878\r\n  },\r\n  {\r\n    \"username\": \"jdavis24\",\r\n    \"password\": \"9sx1aFi1\",\r\n    \"full_name\": \"Jane Davis\",\r\n    \"salary\": 2209\r\n  },\r\n  {\r\n    \"username\": \"swhite25\",\r\n    \"password\": \"87XHo1Qz\",\r\n    \"full_name\": \"Sarah White\",\r\n    \"salary\": 1721\r\n  },\r\n  {\r\n    \"username\": \"rjones26\",\r\n    \"password\": \"xU5f5ITY\",\r\n    \"full_name\": \"Robert Jones\",\r\n    \"salary\": 2103\r\n  },\r\n  {\r\n    \"username\": \"rwilliams27\",\r\n    \"password\": \"UM1xZsjz\",\r\n    \"full_name\": \"Richard Williams\",\r\n    \"salary\": 8850\r\n  },\r\n  {\r\n    \"username\": \"ddavis28\",\r\n    \"password\": \"cO5IdQyC\",\r\n    \"full_name\": \"David Davis\",\r\n    \"salary\": 6152\r\n  },\r\n  {\r\n    \"username\": \"rsmith29\",\r\n    \"password\": \"n3XLowjx\",\r\n    \"full_name\": \"Richard Smith\",\r\n    \"salary\": 1983\r\n  },\r\n  {\r\n    \"username\": \"chernandez30\",\r\n    \"password\": \"Ls2AbCvM\",\r\n    \"full_name\": \"Christopher Hernandez\",\r\n    \"salary\": 8263\r\n  },\r\n  {\r\n    \"username\": \"kwhite31\",\r\n    \"password\": \"Ya9zR3nr\",\r\n    \"full_name\": \"Karen White\",\r\n    \"salary\": 1232\r\n  },\r\n  {\r\n    \"username\": \"wwilliams32\",\r\n    \"password\": \"NByHRSDU\",\r\n    \"full_name\": \"William Williams\",\r\n    \"salary\": 4061\r\n  },\r\n  {\r\n    \"username\": \"ejohnson33\",\r\n    \"password\": \"0RUnBfXT\",\r\n    \"full_name\": \"Elizabeth Johnson\",\r\n    \"salary\": 6238\r\n  },\r\n  {\r\n    \"username\": \"tdavis34\",\r\n    \"password\": \"t2zC0k5u\",\r\n    \"full_name\": \"Thomas Davis\",\r\n    \"salary\": 2931\r\n  },\r\n  {\r\n    \"username\": \"jjackson35\",\r\n    \"password\": \"KcLUFLSZ\",\r\n    \"full_name\": \"Jane Jackson\",\r\n    \"salary\": 7871\r\n  },\r\n  {\r\n    \"username\": \"jmiller36\",\r\n    \"password\": \"qFZdsVs4\",\r\n    \"full_name\": \"Jessica Miller\",\r\n    \"salary\": 2824\r\n  },\r\n  {\r\n    \"username\": \"jrodriguez37\",\r\n    \"password\": \"2yfqDt2P\",\r\n    \"full_name\": \"John Rodriguez\",\r\n    \"salary\": 6854\r\n  },\r\n  {\r\n    \"username\": \"twilliams38\",\r\n    \"password\": \"RkEwxQC5\",\r\n    \"full_name\": \"Thomas Williams\",\r\n    \"salary\": 3688\r\n  },\r\n  {\r\n    \"username\": \"djohnson39\",\r\n    \"password\": \"lMgzr2Pe\",\r\n    \"full_name\": \"David Johnson\",\r\n    \"salary\": 3878\r\n  },\r\n  {\r\n    \"username\": \"jmartinez40\",\r\n    \"password\": \"h85nbVj3\",\r\n    \"full_name\": \"Jessica Martinez\",\r\n    \"salary\": 7924\r\n  },\r\n  {\r\n    \"username\": \"jwilson41\",\r\n    \"password\": \"k8Q9fF4P\",\r\n    \"full_name\": \"Jennifer Wilson\",\r\n    \"salary\": 6133\r\n  },\r\n  {\r\n    \"username\": \"jgarcia42\",\r\n    \"password\": \"AJcHcymy\",\r\n    \"full_name\": \"John Garcia\",\r\n    \"salary\": 3162\r\n  },\r\n  {\r\n    \"username\": \"mthomas43\",\r\n    \"password\": \"3Pv9PpJL\",\r\n    \"full_name\": \"Michael Thomas\",\r\n    \"salary\": 4745\r\n  },\r\n  {\r\n    \"username\": \"ljohnson44\",\r\n    \"password\": \"Qyr4l0la\",\r\n    \"full_name\": \"Linda Johnson\",\r\n    \"salary\": 9059\r\n  },\r\n  {\r\n    \"username\": \"dwilliams45\",\r\n    \"password\": \"aAlljaoD\",\r\n    \"full_name\": \"David Williams\",\r\n    \"salary\": 8360\r\n  },\r\n  {\r\n    \"username\": \"dgarcia46\",\r\n    \"password\": \"PW2ahSnl\",\r\n    \"full_name\": \"David Garcia\",\r\n    \"salary\": 5725\r\n  },\r\n  {\r\n    \"username\": \"lrodriguez47\",\r\n    \"password\": \"9tq98Lk4\",\r\n    \"full_name\": \"Linda Rodriguez\",\r\n    \"salary\": 8383\r\n  },\r\n  {\r\n    \"username\": \"dbrown48\",\r\n    \"password\": \"2KI74KKy\",\r\n    \"full_name\": \"David Brown\",\r\n    \"salary\": 1341\r\n  },\r\n  {\r\n    \"username\": \"ssmith49\",\r\n    \"password\": \"LePjN6nl\",\r\n    \"full_name\": \"Susan Smith\",\r\n    \"salary\": 9165\r\n  },\r\n  {\r\n    \"username\": \"mhernandez50\",\r\n    \"password\": \"NqdH21Kb\",\r\n    \"full_name\": \"Michael Hernandez\",\r\n    \"salary\": 4824\r\n  },\r\n  {\r\n    \"username\": \"erodriguez51\",\r\n    \"password\": \"jQHoUYgd\",\r\n    \"full_name\": \"Emily Rodriguez\",\r\n    \"salary\": 8849\r\n  },\r\n  {\r\n    \"username\": \"cdavis52\",\r\n    \"password\": \"yQVRD2xW\",\r\n    \"full_name\": \"Christopher Davis\",\r\n    \"salary\": 7266\r\n  },\r\n  {\r\n    \"username\": \"dwhite53\",\r\n    \"password\": \"ZE85BP63\",\r\n    \"full_name\": \"David White\",\r\n    \"salary\": 5408\r\n  },\r\n  {\r\n    \"username\": \"shernandez54\",\r\n    \"password\": \"HCt9pxZK\",\r\n    \"full_name\": \"Susan Hernandez\",\r\n    \"salary\": 6930\r\n  },\r\n  {\r\n    \"username\": \"dwhite55\",\r\n    \"password\": \"nevmwpsF\",\r\n    \"full_name\": \"David White\",\r\n    \"salary\": 1628\r\n  },\r\n  {\r\n    \"username\": \"jhernandez56\",\r\n    \"password\": \"Yz2Wx3bm\",\r\n    \"full_name\": \"Joseph Hernandez\",\r\n    \"salary\": 6176\r\n  },\r\n  {\r\n    \"username\": \"jsmith57\",\r\n    \"password\": \"wLDPltiN\",\r\n    \"full_name\": \"Joseph Smith\",\r\n    \"salary\": 5780\r\n  },\r\n  {\r\n    \"username\": \"rsmith58\",\r\n    \"password\": \"Notkm6lL\",\r\n    \"full_name\": \"Richard Smith\",\r\n    \"salary\": 3627\r\n  },\r\n  {\r\n    \"username\": \"prodriguez59\",\r\n    \"password\": \"TC6SRUAi\",\r\n    \"full_name\": \"Patricia Rodriguez\",\r\n    \"salary\": 1480\r\n  },\r\n  {\r\n    \"username\": \"jrodriguez60\",\r\n    \"password\": \"VOv7jdfN\",\r\n    \"full_name\": \"John Rodriguez\",\r\n    \"salary\": 2191\r\n  },\r\n  {\r\n    \"username\": \"sjohnson61\",\r\n    \"password\": \"13nt6FZ8\",\r\n    \"full_name\": \"Susan Johnson\",\r\n    \"salary\": 1611\r\n  },\r\n  {\r\n    \"username\": \"jthomas62\",\r\n    \"password\": \"jEwy7hDb\",\r\n    \"full_name\": \"Jane Thomas\",\r\n    \"salary\": 4553\r\n  },\r\n  {\r\n    \"username\": \"mthompson63\",\r\n    \"password\": \"6DwuwbL0\",\r\n    \"full_name\": \"Michael Thompson\",\r\n    \"salary\": 2478\r\n  },\r\n  {\r\n    \"username\": \"mmoore64\",\r\n    \"password\": \"d3c0qGmY\",\r\n    \"full_name\": \"Michael Moore\",\r\n    \"salary\": 3122\r\n  },\r\n  {\r\n    \"username\": \"jwhite65\",\r\n    \"password\": \"c1tqdJuB\",\r\n    \"full_name\": \"Jessica White\",\r\n    \"salary\": 6024\r\n  },\r\n  {\r\n    \"username\": \"dthomas66\",\r\n    \"password\": \"KLvGT1wb\",\r\n    \"full_name\": \"David Thomas\",\r\n    \"salary\": 5112\r\n  },\r\n  {\r\n    \"username\": \"landerson67\",\r\n    \"password\": \"5Xch8Ea0\",\r\n    \"full_name\": \"Linda Anderson\",\r\n    \"salary\": 2439\r\n  },\r\n  {\r\n    \"username\": \"jjackson68\",\r\n    \"password\": \"HHlt1F3U\",\r\n    \"full_name\": \"Jessica Jackson\",\r\n    \"salary\": 8156\r\n  },\r\n  {\r\n    \"username\": \"janderson69\",\r\n    \"password\": \"e3odoWe8\",\r\n    \"full_name\": \"Jane Anderson\",\r\n    \"salary\": 8991\r\n  },\r\n  {\r\n    \"username\": \"jtaylor70\",\r\n    \"password\": \"oXpibQEb\",\r\n    \"full_name\": \"John Taylor\",\r\n    \"salary\": 8534\r\n  },\r\n  {\r\n    \"username\": \"jmiller71\",\r\n    \"password\": \"aZm09KtA\",\r\n    \"full_name\": \"Jane Miller\",\r\n    \"salary\": 1765\r\n  },\r\n  {\r\n    \"username\": \"eanderson72\",\r\n    \"password\": \"DYpBw3hm\",\r\n    \"full_name\": \"Elizabeth Anderson\",\r\n    \"salary\": 8891\r\n  },\r\n  {\r\n    \"username\": \"jthompson73\",\r\n    \"password\": \"Jye0Jcsh\",\r\n    \"full_name\": \"Joseph Thompson\",\r\n    \"salary\": 8725\r\n  },\r\n  {\r\n    \"username\": \"swilliams74\",\r\n    \"password\": \"a8snzpS8\",\r\n    \"full_name\": \"Sarah Williams\",\r\n    \"salary\": 2941\r\n  },\r\n  {\r\n    \"username\": \"jgarcia75\",\r\n    \"password\": \"C40NqqHb\",\r\n    \"full_name\": \"John Garcia\",\r\n    \"salary\": 9317\r\n  },\r\n  {\r\n    \"username\": \"rwilliams76\",\r\n    \"password\": \"7HfAQWte\",\r\n    \"full_name\": \"Richard Williams\",\r\n    \"salary\": 7067\r\n  },\r\n  {\r\n    \"username\": \"ktaylor77\",\r\n    \"password\": \"uvnilGhy\",\r\n    \"full_name\": \"Karen Taylor\",\r\n    \"salary\": 7053\r\n  },\r\n  {\r\n    \"username\": \"jwilson78\",\r\n    \"password\": \"kxcmbDWI\",\r\n    \"full_name\": \"John Wilson\",\r\n    \"salary\": 9159\r\n  },\r\n  {\r\n    \"username\": \"cgarcia79\",\r\n    \"password\": \"cLkVFE2v\",\r\n    \"full_name\": \"Charles Garcia\",\r\n    \"salary\": 9097\r\n  },\r\n  {\r\n    \"username\": \"cmoore80\",\r\n    \"password\": \"f18d8o6i\",\r\n    \"full_name\": \"Charles Moore\",\r\n    \"salary\": 9831\r\n  },\r\n  {\r\n    \"username\": \"cwilson81\",\r\n    \"password\": \"puCoWAch\",\r\n    \"full_name\": \"Christopher Wilson\",\r\n    \"salary\": 7494\r\n  },\r\n  {\r\n    \"username\": \"swilson82\",\r\n    \"password\": \"C7bY6ps7\",\r\n    \"full_name\": \"Sarah Wilson\",\r\n    \"salary\": 1864\r\n  },\r\n  {\r\n    \"username\": \"ewilliams83\",\r\n    \"password\": \"VqSxP91c\",\r\n    \"full_name\": \"Elizabeth Williams\",\r\n    \"salary\": 5782\r\n  },\r\n  {\r\n    \"username\": \"emartin84\",\r\n    \"password\": \"dDf78ErT\",\r\n    \"full_name\": \"Elizabeth Martin\",\r\n    \"salary\": 1662\r\n  },\r\n  {\r\n    \"username\": \"dmoore85\",\r\n    \"password\": \"d91v37h3\",\r\n    \"full_name\": \"David Moore\",\r\n    \"salary\": 1158\r\n  },\r\n  {\r\n    \"username\": \"sthomas86\",\r\n    \"password\": \"0vn5tJej\",\r\n    \"full_name\": \"Sarah Thomas\",\r\n    \"salary\": 8288\r\n  },\r\n  {\r\n    \"username\": \"crodriguez87\",\r\n    \"password\": \"jPkjHwXW\",\r\n    \"full_name\": \"Christopher Rodriguez\",\r\n    \"salary\": 9778\r\n  },\r\n  {\r\n    \"username\": \"ehernandez88\",\r\n    \"password\": \"aiHDoZFB\",\r\n    \"full_name\": \"Elizabeth Hernandez\",\r\n    \"salary\": 9322\r\n  },\r\n  {\r\n    \"username\": \"lwilliams89\",\r\n    \"password\": \"Q2vMoBuK\",\r\n    \"full_name\": \"Linda Williams\",\r\n    \"salary\": 4958\r\n  },\r\n  {\r\n    \"username\": \"mwilliams90\",\r\n    \"password\": \"GBmnocTV\",\r\n    \"full_name\": \"Michael Williams\",\r\n    \"salary\": 6087\r\n  },\r\n  {\r\n    \"username\": \"swilson91\",\r\n    \"password\": \"K25wUV55\",\r\n    \"full_name\": \"Susan Wilson\",\r\n    \"salary\": 4208\r\n  },\r\n  {\r\n    \"username\": \"jgarcia92\",\r\n    \"password\": \"4q5z54nL\",\r\n    \"full_name\": \"Joseph Garcia\",\r\n    \"salary\": 1118\r\n  },\r\n  {\r\n    \"username\": \"dbrown93\",\r\n    \"password\": \"DI9XaRZD\",\r\n    \"full_name\": \"David Brown\",\r\n    \"salary\": 3830\r\n  },\r\n  {\r\n    \"username\": \"kjohnson94\",\r\n    \"password\": \"jX9trMsq\",\r\n    \"full_name\": \"Karen Johnson\",\r\n    \"salary\": 5484\r\n  },\r\n  {\r\n    \"username\": \"lwhite95\",\r\n    \"password\": \"zqMJkcpn\",\r\n    \"full_name\": \"Linda White\",\r\n    \"salary\": 3695\r\n  },\r\n  {\r\n    \"username\": \"jdavis96\",\r\n    \"password\": \"LvHO8BpF\",\r\n    \"full_name\": \"Jennifer Davis\",\r\n    \"salary\": 8765\r\n  },\r\n  {\r\n    \"username\": \"jwhite97\",\r\n    \"password\": \"A6FxH03J\",\r\n    \"full_name\": \"Jane White\",\r\n    \"salary\": 3628\r\n  },\r\n  {\r\n    \"username\": \"rjones98\",\r\n    \"password\": \"zfeiNcm7\",\r\n    \"full_name\": \"Robert Jones\",\r\n    \"salary\": 5852\r\n  },\r\n  {\r\n    \"username\": \"cthomas99\",\r\n    \"password\": \"IFrlzpq5\",\r\n    \"full_name\": \"Charles Thomas\",\r\n    \"salary\": 6158\r\n  },\r\n  {\r\n    \"username\": \"rtaylor100\",\r\n    \"password\": \"ZsFgtGYn\",\r\n    \"full_name\": \"Robert Taylor\",\r\n    \"salary\": 8567\r\n  }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 19 Jun 2025 04:43:56 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"ewilson1\",\"password\":\"G8ab3mxn\",\"full_name\":\"Emily Wilson\",\"salary\":6717,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"lwilliams2\",\"password\":\"NRFhmskz\",\"full_name\":\"Linda Williams\",\"salary\":1334,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"canderson3\",\"password\":\"CwAsmmyY\",\"full_name\":\"Charles Anderson\",\"salary\":6783,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"rgarcia4\",\"password\":\"u4xGlEig\",\"full_name\":\"Richard Garcia\",\"salary\":1329,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"sanderson5\",\"password\":\"WvYZ3Y4W\",\"full_name\":\"Susan Anderson\",\"salary\":5587,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"ljones6\",\"password\":\"TgGYeUQQ\",\"full_name\":\"Linda Jones\",\"salary\":8481,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"ebrown7\",\"password\":\"2Vf7RfIL\",\"full_name\":\"Emily Brown\",\"salary\":6140,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"dwilliams8\",\"password\":\"CaAtDVoS\",\"full_name\":\"David Williams\",\"salary\":1314,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"emartin9\",\"password\":\"67hXKfSy\",\"full_name\":\"Emily Martin\",\"salary\":8060,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jwilson10\",\"password\":\"6TW4GKhc\",\"full_name\":\"Jessica Wilson\",\"salary\":9528,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"rdavis11\",\"password\":\"epMzlRNi\",\"full_name\":\"Richard Davis\",\"salary\":3124,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"edavis12\",\"password\":\"TGTOQMT3\",\"full_name\":\"Emily Davis\",\"salary\":6623,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"cwilliams13\",\"password\":\"MljfzKwP\",\"full_name\":\"Charles Williams\",\"salary\":1127,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"mrodriguez14\",\"password\":\"1waKHsgt\",\"full_name\":\"Michael Rodriguez\",\"salary\":3976,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"cmoore15\",\"password\":\"aFNomqJp\",\"full_name\":\"Christopher Moore\",\"salary\":1146,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"tgarcia16\",\"password\":\"llGyoalB\",\"full_name\":\"Thomas Garcia\",\"salary\":6504,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jmartinez17\",\"password\":\"ZDXhlub8\",\"full_name\":\"John Martinez\",\"salary\":3570,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"lhernandez18\",\"password\":\"CeX9NZQA\",\"full_name\":\"Linda Hernandez\",\"salary\":5430,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"kbrown19\",\"password\":\"lfhfzRVi\",\"full_name\":\"Karen Brown\",\"salary\":4139,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"sgarcia20\",\"password\":\"LC297sxU\",\"full_name\":\"Sarah Garcia\",\"salary\":7678,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"lgarcia21\",\"password\":\"b6Un4R7u\",\"full_name\":\"Linda Garcia\",\"salary\":9015,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jjones22\",\"password\":\"9EQ0mYgz\",\"full_name\":\"Jessica Jones\",\"salary\":8029,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"ldavis23\",\"password\":\"y8hjgbBo\",\"full_name\":\"Linda Davis\",\"salary\":8878,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jdavis24\",\"password\":\"9sx1aFi1\",\"full_name\":\"Jane Davis\",\"salary\":2209,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"swhite25\",\"password\":\"87XHo1Qz\",\"full_name\":\"Sarah White\",\"salary\":1721,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"rjones26\",\"password\":\"xU5f5ITY\",\"full_name\":\"Robert Jones\",\"salary\":2103,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"rwilliams27\",\"password\":\"UM1xZsjz\",\"full_name\":\"Richard Williams\",\"salary\":8850,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"ddavis28\",\"password\":\"cO5IdQyC\",\"full_name\":\"David Davis\",\"salary\":6152,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"rsmith29\",\"password\":\"n3XLowjx\",\"full_name\":\"Richard Smith\",\"salary\":1983,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"chernandez30\",\"password\":\"Ls2AbCvM\",\"full_name\":\"Christopher Hernandez\",\"salary\":8263,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"kwhite31\",\"password\":\"Ya9zR3nr\",\"full_name\":\"Karen White\",\"salary\":1232,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"wwilliams32\",\"password\":\"NByHRSDU\",\"full_name\":\"William Williams\",\"salary\":4061,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"ejohnson33\",\"password\":\"0RUnBfXT\",\"full_name\":\"Elizabeth Johnson\",\"salary\":6238,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"tdavis34\",\"password\":\"t2zC0k5u\",\"full_name\":\"Thomas Davis\",\"salary\":2931,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jjackson35\",\"password\":\"KcLUFLSZ\",\"full_name\":\"Jane Jackson\",\"salary\":7871,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jmiller36\",\"password\":\"qFZdsVs4\",\"full_name\":\"Jessica Miller\",\"salary\":2824,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jrodriguez37\",\"password\":\"2yfqDt2P\",\"full_name\":\"John Rodriguez\",\"salary\":6854,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"twilliams38\",\"password\":\"RkEwxQC5\",\"full_name\":\"Thomas Williams\",\"salary\":3688,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"djohnson39\",\"password\":\"lMgzr2Pe\",\"full_name\":\"David Johnson\",\"salary\":3878,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jmartinez40\",\"password\":\"h85nbVj3\",\"full_name\":\"Jessica Martinez\",\"salary\":7924,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jwilson41\",\"password\":\"k8Q9fF4P\",\"full_name\":\"Jennifer Wilson\",\"salary\":6133,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jgarcia42\",\"password\":\"AJcHcymy\",\"full_name\":\"John Garcia\",\"salary\":3162,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"mthomas43\",\"password\":\"3Pv9PpJL\",\"full_name\":\"Michael Thomas\",\"salary\":4745,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"ljohnson44\",\"password\":\"Qyr4l0la\",\"full_name\":\"Linda Johnson\",\"salary\":9059,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"dwilliams45\",\"password\":\"aAlljaoD\",\"full_name\":\"David Williams\",\"salary\":8360,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"dgarcia46\",\"password\":\"PW2ahSnl\",\"full_name\":\"David Garcia\",\"salary\":5725,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"lrodriguez47\",\"password\":\"9tq98Lk4\",\"full_name\":\"Linda Rodriguez\",\"salary\":8383,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"dbrown48\",\"password\":\"2KI74KKy\",\"full_name\":\"David Brown\",\"salary\":1341,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"ssmith49\",\"password\":\"LePjN6nl\",\"full_name\":\"Susan Smith\",\"salary\":9165,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"mhernandez50\",\"password\":\"NqdH21Kb\",\"full_name\":\"Michael Hernandez\",\"salary\":4824,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"erodriguez51\",\"password\":\"jQHoUYgd\",\"full_name\":\"Emily Rodriguez\",\"salary\":8849,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"cdavis52\",\"password\":\"yQVRD2xW\",\"full_name\":\"Christopher Davis\",\"salary\":7266,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"dwhite53\",\"password\":\"ZE85BP63\",\"full_name\":\"David White\",\"salary\":5408,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"shernandez54\",\"password\":\"HCt9pxZK\",\"full_name\":\"Susan Hernandez\",\"salary\":6930,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"dwhite55\",\"password\":\"nevmwpsF\",\"full_name\":\"David White\",\"salary\":1628,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jhernandez56\",\"password\":\"Yz2Wx3bm\",\"full_name\":\"Joseph Hernandez\",\"salary\":6176,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jsmith57\",\"password\":\"wLDPltiN\",\"full_name\":\"Joseph Smith\",\"salary\":5780,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"rsmith58\",\"password\":\"Notkm6lL\",\"full_name\":\"Richard Smith\",\"salary\":3627,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"prodriguez59\",\"password\":\"TC6SRUAi\",\"full_name\":\"Patricia Rodriguez\",\"salary\":1480,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jrodriguez60\",\"password\":\"VOv7jdfN\",\"full_name\":\"John Rodriguez\",\"salary\":2191,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"sjohnson61\",\"password\":\"13nt6FZ8\",\"full_name\":\"Susan Johnson\",\"salary\":1611,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jthomas62\",\"password\":\"jEwy7hDb\",\"full_name\":\"Jane Thomas\",\"salary\":4553,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"mthompson63\",\"password\":\"6DwuwbL0\",\"full_name\":\"Michael Thompson\",\"salary\":2478,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"mmoore64\",\"password\":\"d3c0qGmY\",\"full_name\":\"Michael Moore\",\"salary\":3122,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jwhite65\",\"password\":\"c1tqdJuB\",\"full_name\":\"Jessica White\",\"salary\":6024,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"dthomas66\",\"password\":\"KLvGT1wb\",\"full_name\":\"David Thomas\",\"salary\":5112,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"landerson67\",\"password\":\"5Xch8Ea0\",\"full_name\":\"Linda Anderson\",\"salary\":2439,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jjackson68\",\"password\":\"HHlt1F3U\",\"full_name\":\"Jessica Jackson\",\"salary\":8156,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"janderson69\",\"password\":\"e3odoWe8\",\"full_name\":\"Jane Anderson\",\"salary\":8991,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jtaylor70\",\"password\":\"oXpibQEb\",\"full_name\":\"John Taylor\",\"salary\":8534,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jmiller71\",\"password\":\"aZm09KtA\",\"full_name\":\"Jane Miller\",\"salary\":1765,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"eanderson72\",\"password\":\"DYpBw3hm\",\"full_name\":\"Elizabeth Anderson\",\"salary\":8891,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jthompson73\",\"password\":\"Jye0Jcsh\",\"full_name\":\"Joseph Thompson\",\"salary\":8725,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"swilliams74\",\"password\":\"a8snzpS8\",\"full_name\":\"Sarah Williams\",\"salary\":2941,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jgarcia75\",\"password\":\"C40NqqHb\",\"full_name\":\"John Garcia\",\"salary\":9317,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"rwilliams76\",\"password\":\"7HfAQWte\",\"full_name\":\"Richard Williams\",\"salary\":7067,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"ktaylor77\",\"password\":\"uvnilGhy\",\"full_name\":\"Karen Taylor\",\"salary\":7053,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jwilson78\",\"password\":\"kxcmbDWI\",\"full_name\":\"John Wilson\",\"salary\":9159,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"cgarcia79\",\"password\":\"cLkVFE2v\",\"full_name\":\"Charles Garcia\",\"salary\":9097,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"cmoore80\",\"password\":\"f18d8o6i\",\"full_name\":\"Charles Moore\",\"salary\":9831,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"cwilson81\",\"password\":\"puCoWAch\",\"full_name\":\"Christopher Wilson\",\"salary\":7494,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"swilson82\",\"password\":\"C7bY6ps7\",\"full_name\":\"Sarah Wilson\",\"salary\":1864,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"ewilliams83\",\"password\":\"VqSxP91c\",\"full_name\":\"Elizabeth Williams\",\"salary\":5782,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"emartin84\",\"password\":\"dDf78ErT\",\"full_name\":\"Elizabeth Martin\",\"salary\":1662,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"dmoore85\",\"password\":\"d91v37h3\",\"full_name\":\"David Moore\",\"salary\":1158,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"sthomas86\",\"password\":\"0vn5tJej\",\"full_name\":\"Sarah Thomas\",\"salary\":8288,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"crodriguez87\",\"password\":\"jPkjHwXW\",\"full_name\":\"Christopher Rodriguez\",\"salary\":9778,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"ehernandez88\",\"password\":\"aiHDoZFB\",\"full_name\":\"Elizabeth Hernandez\",\"salary\":9322,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"lwilliams89\",\"password\":\"Q2vMoBuK\",\"full_name\":\"Linda Williams\",\"salary\":4958,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"mwilliams90\",\"password\":\"GBmnocTV\",\"full_name\":\"Michael Williams\",\"salary\":6087,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"swilson91\",\"password\":\"K25wUV55\",\"full_name\":\"Susan Wilson\",\"salary\":4208,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jgarcia92\",\"password\":\"4q5z54nL\",\"full_name\":\"Joseph Garcia\",\"salary\":1118,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"dbrown93\",\"password\":\"DI9XaRZD\",\"full_name\":\"David Brown\",\"salary\":3830,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"kjohnson94\",\"password\":\"jX9trMsq\",\"full_name\":\"Karen Johnson\",\"salary\":5484,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"lwhite95\",\"password\":\"zqMJkcpn\",\"full_name\":\"Linda White\",\"salary\":3695,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jdavis96\",\"password\":\"LvHO8BpF\",\"full_name\":\"Jennifer Davis\",\"salary\":8765,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"jwhite97\",\"password\":\"A6FxH03J\",\"full_name\":\"Jane White\",\"salary\":3628,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"rjones98\",\"password\":\"zfeiNcm7\",\"full_name\":\"Robert Jones\",\"salary\":5852,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"cthomas99\",\"password\":\"IFrlzpq5\",\"full_name\":\"Charles Thomas\",\"salary\":6158,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"},{\"Id\":0,\"CreatedBy\":0,\"UpdatedBy\":0,\"username\":\"rtaylor100\",\"password\":\"ZsFgtGYn\",\"full_name\":\"Robert Taylor\",\"salary\":8567,\"CreatedAt\":\"0001-01-01T00:00:00Z\",\"UpdatedAt\":\"0001-01-01T00:00:00Z\"}]\n"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var data = JSON.parse(responseBody);\r",
+							"pm.environment.set(\"access_token\", data.token);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"ewilson1\",\r\n    \"password\":\"G8ab3mxn\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login as employee",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"ewilson1\",\r\n    \"password\":\"G8ab3mxn\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 19 Jun 2025 07:42:36 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "206"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"expiry_time:\":\"24h0m0s\",\"message\":\"OK\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTA0MDUzNTYsInVzZXJfaWQiOjIwMywidXNlcm5hbWUiOiJld2lsc29uMSJ9.NwrTFIZw8DJRNImFPAeSGsJB98rLuxytxjnwM8RokP0\"}\n"
+				},
+				{
+					"name": "Login as admin",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"admin\",\r\n    \"password\":\"P@ssw0rd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 19 Jun 2025 07:43:02 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "200"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain; charset=utf-8"
+						}
+					],
+					"cookie": [],
+					"body": "{\"expiry_time:\":\"24h0m0s\",\"message\":\"OK\",\"token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTA0MDUzODIsInVzZXJfaWQiOjIsInVzZXJuYW1lIjoiYWRtaW4ifQ.IirSXfWEaWsT1lbbnSV33332CpzTcsVrw-q6uqZVGTA\"}\n"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{access_token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

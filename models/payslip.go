@@ -1,18 +1,20 @@
 package models
 
-import "time"
+import (
+	"time"
+)
 
-type payslip struct {
-	id         uint `gorm:"primaryKey"`
-	employeeID int
-	createdBy  int
-	updatedBy  int
-	Points     int64
+type Payslip struct {
+	Id         uint `gorm:"primaryKey"`
+	EmployeeID int  `json:"employee_id"`
+	CreatedBy  int
+	UpdatedBy  int
 
-	isDownloaded bool
-	status       string `json:"status"`
-	downloadedOn time.Time
-	period       time.Time
+	IsDownloaded bool
+	Status       string `json:"status"`
+	TotalAmount  int
+	DownloadedOn time.Time
+	Period       time.Time `json:"period"`
 	CreatedAt    time.Time
 	UpdatedAt    time.Time
 }

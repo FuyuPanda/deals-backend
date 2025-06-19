@@ -38,16 +38,16 @@ func JWTMiddleware(next http.Handler) http.Handler {
 		}
 
 		claims := token.Claims.(jwt.MapClaims)
-		userIDFloat, ok := claims["user_id"].(float64)
+		userIDFloat, ok := claims[string(UserIDKey)].(float64)
 		if !ok {
 			http.Error(w, "Invalid token data", http.StatusUnauthorized)
 			return
 		}
 
 		username, _ := claims["username"].(string)
-		fmt.Println(userIDFloat)
-		ctx := context.WithValue(r.Context(), UserIDKey, userIDFloat)
-		ctx = context.WithValue(r.Context(), UsernameKey, username)
+
+		ctx := context.WithValue(r.Context(), UserIDKey, uint(userIDFloat))
+		ctx = context.WithValue(ctx, UsernameKey, username)
 		next.ServeHTTP(w, r.WithContext(ctx))
 
 	})

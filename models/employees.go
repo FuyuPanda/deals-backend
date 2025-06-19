@@ -7,10 +7,10 @@ type Employees struct {
 	CreatedBy int
 	UpdatedBy int
 
-	Username string `json:"username"`
-	Password string `json:"password"`
-	FullName string `json:"full_name"`
-	Salary   string `json:"salary"`
+	Username string  `json:"username"`
+	Password string  `json:"password"`
+	FullName string  `json:"full_name"`
+	Salary   float64 `json:"salary"`
 
 	CreatedAt time.Time
 	UpdatedAt time.Time

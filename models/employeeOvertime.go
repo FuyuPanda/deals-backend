@@ -2,14 +2,13 @@ package models
 
 import "time"
 
-type employeeOvertime struct {
+type EmployeeOvertime struct {
 	Id         uint `gorm:"primaryKey"`
-	createdBy  int
-	updatedBy  int
-	employeeID int
-	Points     int64
+	CreatedBy  int
+	UpdatedBy  int
+	EmployeeID int
 
-	startTime  time.Time
-	endTime    time.Time
-	totalHours int
+	StartTime  time.Time `json:"start_time"`
+	EndTime    time.Time `json:"end_time"`
+	TotalHours int
 }

@@ -16,7 +16,12 @@ import (
 
 func CreateEmployee(w http.ResponseWriter, r *http.Request) {
 	var employees []models.Employees
-	username := r.Context().Value(middleware.UsernameKey).(string)
+
+	username, ok := r.Context().Value(middleware.UsernameKey).(string)
+	if !ok {
+		http.Error(w, "Invalid username", http.StatusInternalServerError)
+		return
+	}
 
 	if username != "admin" {
 		w.WriteHeader(http.StatusUnauthorized)
@@ -40,17 +45,19 @@ func CreateEmployee(w http.ResponseWriter, r *http.Request) {
 		}
 
 		employee.Password = string(hashedPassword)
+		salary := float64(employee.Salary)
+		employee.Salary = salary
 
-		intID, ok := r.Context().Value(middleware.UserIDKey).(float64)
+		userID, ok := r.Context().Value(middleware.UserIDKey).(uint)
 		if !ok {
-			http.Error(w, "Invalid user ID in context", http.StatusInternalServerError)
+			http.Error(w, "Invalid user ID", http.StatusInternalServerError)
 			return
 		}
 
-		employee.CreatedBy = int(intID)
-		employee.UpdatedBy = int(intID)
+		employee.CreatedBy = int(userID)
+		employee.UpdatedBy = int(userID)
 
-		if err := db.DB.Create(&employees).Error; err != nil {
+		if err := db.DB.Create(&employee).Error; err != nil {
 			http.Error(w, "Failed to create user", http.StatusInternalServerError)
 			return
 		}
